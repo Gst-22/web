@@ -1,0 +1,726 @@
+/* Isso serve para resetar totalmente os estilos, podem retirar se preferirem */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+}
+
+/* cores do projeto padrao */
+:root {
+	--primary: #0d102b;
+	--on-primary: #ffffff;
+	--background: #ffffff;
+	--on-background: #000000;
+	--section-title: #0d102b;
+	--secondary-text: #4E4E4E;
+}
+
+/* cores do projeto se o navegador estiver no modo escuro */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary: #083063;
+		--on-primary: #ffffff;
+		--background: #0e0f15;
+		--on-background: #ffffff;
+		--section-title: #ffffff;
+		--secondary-text: #A0A0A0;
+	}
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background: var(--background);
+}
+
+nav {
+	background: var(--primary);
+	border: 0 !important;
+	box-shadow: 0 !important;
+	width: 100%;
+}
+
+.nav-links {
+	display: none;
+	gap: 50px;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.navbar-toggler {
+	position: absolute;
+	right: 0px;
+	border: 0 !important;
+	color: var(--on-primary);
+	font-size: 1.5rem;
+}
+
+.offcanvas {
+	background: var(--primary);
+	color: var(--on-primary);
+}
+
+.offcanvas-close {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	padding: 15px;
+	color: var(--on-primary);
+	cursor: pointer;
+}
+
+nav a,
+header a,
+.nav-link {
+	text-decoration: none;
+	color: var(--on-primary) !important;
+	font-weight: bold;
+	font-size: 1.5rem;
+	letter-spacing: 0.07em;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:link,
+a:visited {
+	color: var(--on-primary);
+}
+
+header {
+	background: var(--primary);
+	padding: 140px 30px 240px 30px;
+	border-radius: 0 0 7rem 7rem;
+}
+
+h1 {
+	color: var(--on-primary);
+	font-size: 3.125rem;
+	font-weight: 900;
+	letter-spacing: 0.38em;
+}
+
+header h2,
+footer h2 {
+	color: var(--on-primary);
+	font-size: 3rem;
+	font-weight: 900;
+	margin: 36px 0 60px 0;
+}
+
+.header-socialmedia * {
+	font-size: 3.125rem;
+	text-decoration: none !important;
+	margin: 0 0.25rem;
+}
+
+main {
+	padding: 60px;
+	max-width: 1550px;
+}
+
+section {
+	margin-bottom: 120px;
+}
+
+h2 {
+	color: var(--section-title);
+	font-size: 3rem;
+	margin-bottom: 40px;
+}
+
+h3 {
+	color: var(--section-title);
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+p {
+	color: var(--on-background);
+	font-size: 1.5rem;
+}
+
+.aboutme {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.aboutme-pic img {
+	max-width: 300px;
+	max-height: 300px;
+	width: 100%;
+	aspect-ratio: 1;
+}
+
+.aboutme-content p {
+	margin-bottom: 1.5rem;
+}
+
+.portfolio-wrapper {
+	gap: 70px;
+}
+
+.portfolio-card {
+	max-width: 600px;
+	padding: 35px;
+	border-radius: 37px;
+	border: 6px solid var(--primary);
+}
+
+.portfolio-card-title {
+	text-align: center;
+	margin-bottom: 35px;
+	font-size: 2.5rem;
+	letter-spacing: 0.07em;
+}
+
+.portfolio-card-content {
+	margin: 0;
+	font-size: 1rem;
+	color: var(--secondary-text);
+}
+
+.portfolio-card-skills-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin: 35px 0;
+}
+
+.portfolio-card-skill {
+	background: var(--primary);
+	text-align: center;
+	border-radius: 12px;
+}
+
+.portfolio-card-skill p {
+	color: var(--on-primary);
+}
+
+.portfolio-card-skill p {
+	margin: 8px 24px;
+	padding: 0;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.portfolio-card-image img {
+	width: 100%;
+}
+
+.experiences-wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	gap: 30px;
+}
+
+.experiences-card {
+	border-radius: 20px;
+	border: 6px solid var(--primary);
+	padding: 30px 45px 30px 50px;
+}
+
+.experiences-card-title, .experiences-card-company {
+	font-size: 1.5rem;
+	color: var(--on-background)
+}
+
+.experiences-card-company {
+	font-weight: 550;
+}
+
+.experiences-card-description {
+	margin: 10px auto 15px auto;
+	font-size: 1rem;
+	color: var(--secondary-text);
+}
+
+.experiences-card-details {
+	font-weight: 550;
+	font-size: 1rem;
+	margin: 0;
+}
+
+.stack-wrapper {
+	max-width: 900px;
+	gap: 60px 40px;
+}
+
+footer {
+	border-radius: 7rem 7rem 0 0;
+	padding: 10px 30px;
+	background-color: var(--primary);
+}
+
+#contato {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-title {
+	margin: 65px 30px 80px 30px;
+	text-transform: none;
+	font-size: 2.5rem;
+}
+
+.contact-icons {
+	font-size: 4rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-icons-container {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.contact-text {
+	font-size: 1.5rem;
+	margin-bottom: 0;
+	color: var(--on-primary);
+}
+
+.contact-credits {
+	color: #FFE052;
+}
+
+@media screen and (min-width: 500px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	.navbar-toggler {
+		display: none;
+	}
+
+	.nav-links {
+		display: flex;
+	}
+
+	header {
+		padding: 140px 85px 240px 85px;
+	}
+
+	main {
+		padding: 120px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	html {
+		font-size: 14px;
+	}
+
+	nav {
+		padding: 45px 100px;
+	}
+
+	header {/* Isso serve para resetar totalmente os estilos, podem retirar se preferirem */
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+        
+        /* cores do projeto padrao */
+        :root {
+            --primary: #0d102b;
+            --on-primary: #ffffff;
+            --background: #ffffff;
+            --on-background: #000000;
+            --section-title: #0d102b;
+            --secondary-text: #4E4E4E;
+        }
+        
+        /* cores do projeto se o navegador estiver no modo escuro */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #083063;
+                --on-primary: #ffffff;
+                --background: #0e0f15;
+                --on-background: #ffffff;
+                --section-title: #ffffff;
+                --secondary-text: #A0A0A0;
+            }
+        }
+        
+        html {
+            font-size: 10px;
+        }
+        
+        body {
+            background: var(--background);
+        }
+        
+        nav {
+            background: var(--primary);
+            border: 0 !important;
+            box-shadow: 0 !important;
+            width: 100%;
+        }
+        
+        .nav-links {
+            display: none;
+            gap: 50px;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        .navbar-toggler {
+            position: absolute;
+            right: 0px;
+            border: 0 !important;
+            color: var(--on-primary);
+            font-size: 1.5rem;
+        }
+        
+        .offcanvas {
+            background: var(--primary);
+            color: var(--on-primary);
+        }
+        
+        .offcanvas-close {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            padding: 15px;
+            color: var(--on-primary);
+            cursor: pointer;
+        }
+        
+        nav a,
+        header a,
+        .nav-link {
+            text-decoration: none;
+            color: var(--on-primary) !important;
+            font-weight: bold;
+            font-size: 1.5rem;
+            letter-spacing: 0.07em;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        a:link,
+        a:visited {
+            color: var(--on-primary);
+        }
+        
+        header {
+            background: var(--primary);
+            padding: 140px 30px 240px 30px;
+            border-radius: 0 0 7rem 7rem;
+        }
+        
+        h1 {
+            color: var(--on-primary);
+            font-size: 3.125rem;
+            font-weight: 900;
+            letter-spacing: 0.38em;
+        }
+        
+        header h2,
+        footer h2 {
+            color: var(--on-primary);
+            font-size: 3rem;
+            font-weight: 900;
+            margin: 36px 0 60px 0;
+        }
+        
+        .header-socialmedia * {
+            font-size: 3.125rem;
+            text-decoration: none !important;
+            margin: 0 0.25rem;
+        }
+        
+        main {
+            padding: 60px;
+            max-width: 1550px;
+        }
+        
+        section {
+            margin-bottom: 120px;
+        }
+        
+        h2 {
+            color: var(--section-title);
+            font-size: 3rem;
+            margin-bottom: 40px;
+        }
+        
+        h3 {
+            color: var(--section-title);
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            color: var(--on-background);
+            font-size: 1.5rem;
+        }
+        
+        .aboutme {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        
+        .aboutme-pic img {
+            max-width: 300px;
+            max-height: 300px;
+            width: 100%;
+            aspect-ratio: 1;
+        }
+        
+        .aboutme-content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .portfolio-wrapper {
+            gap: 70px;
+        }
+        
+        .portfolio-card {
+            max-width: 600px;
+            padding: 35px;
+            border-radius: 37px;
+            border: 6px solid var(--primary);
+        }
+        
+        .portfolio-card-title {
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 2.5rem;
+            letter-spacing: 0.07em;
+        }
+        
+        .portfolio-card-content {
+            margin: 0;
+            font-size: 1rem;
+            color: var(--secondary-text);
+        }
+        
+        .portfolio-card-skills-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 35px 0;
+        }
+        
+        .portfolio-card-skill {
+            background: var(--primary);
+            text-align: center;
+            border-radius: 12px;
+        }
+        
+        .portfolio-card-skill p {
+            color: var(--on-primary);
+        }
+        
+        .portfolio-card-skill p {
+            margin: 8px 24px;
+            padding: 0;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        
+        .portfolio-card-image img {
+            width: 100%;
+        }
+        
+        .experiences-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            gap: 30px;
+        }
+        
+        .experiences-card {
+            border-radius: 20px;
+            border: 6px solid var(--primary);
+            padding: 30px 45px 30px 50px;
+        }
+        
+        .experiences-card-title, .experiences-card-company {
+            font-size: 1.5rem;
+            color: var(--on-background)
+        }
+        
+        .experiences-card-company {
+            font-weight: 550;
+        }
+        
+        .experiences-card-description {
+            margin: 10px auto 15px auto;
+            font-size: 1rem;
+            color: var(--secondary-text);
+        }
+        
+        .experiences-card-details {
+            font-weight: 550;
+            font-size: 1rem;
+            margin: 0;
+        }
+        
+        .stack-wrapper {
+            max-width: 900px;
+            gap: 60px 40px;
+        }
+        
+        footer {
+            border-radius: 7rem 7rem 0 0;
+            padding: 10px 30px;
+            background-color: var(--primary);
+        }
+        
+        #contato {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .contact-title {
+            margin: 65px 30px 80px 30px;
+            text-transform: none;
+            font-size: 2.5rem;
+        }
+        
+        .contact-icons {
+            font-size: 4rem;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .contact-icons-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .contact-text {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+            color: var(--on-primary);
+        }
+        
+        .contact-credits {
+            color: #FFE052;
+        }
+        
+        @media screen and (min-width: 500px) {
+            html {
+                font-size: 12px;
+            }
+        }
+        
+        @media screen and (min-width: 750px) {
+            .navbar-toggler {
+                display: none;
+            }
+        
+            .nav-links {
+                display: flex;
+            }
+        
+            header {
+                padding: 140px 85px 240px 85px;
+            }
+        
+            main {
+                padding: 120px;
+            }
+        }
+        
+        @media screen and (min-width: 1200px) {
+            html {
+                font-size: 14px;
+            }
+        
+            nav {
+                padding: 45px 100px;
+            }
+        
+            header {
+                border-radius: 0 0 143px 143px;
+            }
+        
+            h2 {
+                margin-bottom: 81px;
+            }
+        
+            .aboutme {
+                grid-template-columns: 1fr 3fr;
+            }
+        
+            .aboutme-content p {
+                margin-left: 140px;
+            }
+        
+            .portfolio-wrapper {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        
+            .experiences-wrapper {
+                grid-template-columns: 1fr 1fr;
+                justify-items:normal;
+                gap: 60px;
+            }
+        
+            footer {
+                border-radius: 143px 143px 0 0;
+            }
+        }
+        
+        @media screen and (min-width: 1400px) {
+            html {
+                font-size: 16px;
+            }
+        }
+	h2 {
+		margin-bottom: 81px;
+	}
+
+	.aboutme {
+		grid-template-columns: 1fr 3fr;
+	}
+
+	.aboutme-content p {
+		margin-left: 140px;
+	}
+
+	.portfolio-wrapper {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.experiences-wrapper {
+		grid-template-columns: 1fr 1fr;
+		justify-items:normal;
+		gap: 60px;
+	}
+
+	footer {
+		border-radius: 143px 143px 0 0;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	html {
+		font-size: 16px;
+	}
+}}

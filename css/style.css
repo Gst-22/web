@@ -1,0 +1,27 @@
+*  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+a:hover {
+    color: red;
+}
+
+nav {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+
+
+html {
+    background-color: lightgreen;
+    color: black;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 3rem;
+    letter-spacing: 0.01rem;
+}
