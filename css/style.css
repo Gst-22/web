@@ -1,3 +1,4 @@
+
 *  {
     margin: 0;
     padding: 0;
@@ -5,23 +6,78 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    font-family: "Comic Neue", cursive;
+    color: white;
+
 }
 
 a:hover {
-    color: red;
+    color: #ffb649;
 }
 
 nav {
-    background-color: lightblue;
     padding: 10px;
 }
 
+header {
+    padding: 10px;
+}
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#coolgif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 html {
-    background-color: lightgreen;
-    color: black;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: transparent;
     font-size: 3rem;
     letter-spacing: 0.01rem;
 }
+
+body {
+  background-image: url(../assets/hacker.jpeg);
+  background-size: cover;
+}
+
+.comic-neue-light {
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .comic-neue-regular {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .comic-neue-bold {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .comic-neue-light-italic {
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .comic-neue-regular-italic {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .comic-neue-bold-italic {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
