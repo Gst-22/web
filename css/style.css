@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 *  {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    font-family: "Comic Neue", cursive;
+    font-family: "Roboto Slab", serif;
     color: white;
 
 }
@@ -15,69 +17,78 @@ a:hover {
     color: #ffb649;
 }
 
+a:hover i{
+    color: #ffb649;
+}
+
 nav {
-    padding: 10px;
+  background-color: rgba(0, 0, 0, 0.486);
+  padding: 10px;
+  text-indent: 2%;
+  font-size: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+a + a {
+  margin-left: 0.5rem;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.658);
+  padding: 0.1rem;
+  margin: 0.5rem;
+  float: right;
+  border-radius: 2%;
+}
+
+.card-title {
+  font-size: 2rem;
+  margin: 0.8rem;
+}
+
+.card-text {
+  font-size: 1.5rem;
+  margin: 0.8rem;
+}
+
+.card-img-top {
+  border-radius: 2%;
+}
+
+#go-somewhere {
+  margin: 0.8rem;
+  font-size: 2rem;
 }
 
 header {
-    padding: 10px;
+  background-color: rgba(0, 0, 0, 0.658);
+  padding: 10px;
+  text-indent: 2%;
+  font-size: 3rem;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+footer {
+  background-color: rgba(0, 0, 0, 0.486);
+  padding: 10px;
+  text-indent: 2%;
+  font-size: 2rem;
 }
 
-#coolgif {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
 html {
-    background-color: transparent;
-    font-size: 3rem;
     letter-spacing: 0.01rem;
 }
 
 body {
-  background-image: url(../assets/hacker.jpeg);
+  background-image: url(../assets/rain.jpg);
   background-size: cover;
 }
-
-.comic-neue-light {
-    font-family: "Comic Neue", cursive;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .comic-neue-regular {
-    font-family: "Comic Neue", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .comic-neue-bold {
-    font-family: "Comic Neue", cursive;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .comic-neue-light-italic {
-    font-family: "Comic Neue", cursive;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .comic-neue-regular-italic {
-    font-family: "Comic Neue", cursive;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .comic-neue-bold-italic {
-    font-family: "Comic Neue", cursive;
-    font-weight: 700;
-    font-style: italic;
-  }
   
